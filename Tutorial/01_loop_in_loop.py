@@ -1,9 +1,9 @@
-for i in range(5,0,-1):
-  for j in range(i):
-    print(f"I: {i} , J: {j}")
+for i in range(5, 0, -1):
+    for j in range(i):
+        print(f"I: {i} , J: {j}")
 
 
-'''
+"""
 i = 5
       j = 0
       j = 1
@@ -25,4 +25,4 @@ i = 2
 i = 1
       j = 0
 
-'''
+"""
