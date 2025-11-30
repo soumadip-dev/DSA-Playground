@@ -2,14 +2,14 @@ def isPalindrome(x: int) -> bool:
     if x < 0:
         return False
 
-    original = x
-    reverse = 0
+    original_number = x
+    reversed_number = 0
 
     while x != 0:
-        reverse = reverse * 10 + x % 10
-        x = x // 10
+        reversed_number = reversed_number * 10 + (x % 10)
+        x //= 10
 
-    return reverse == original
+    return reversed_number == original_number
 
 
 print(isPalindrome(515))

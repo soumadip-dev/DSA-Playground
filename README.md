@@ -14,4 +14,5 @@ A personal collection of my Data Structures and Algorithms practice, patterns, a
 - ⚙️ Implementation exercises.
 
 ## 🎯 Purpose
+
 To strengthen problem-solving skills, build a solid foundation in DSA, and track consistent learning through structured practice. 🔍

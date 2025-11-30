@@ -1,15 +1,19 @@
 def reverse(x):
-    reversed_num = 0
-    original = x
+    reversed_number = 0
+    original_number = x
     limit = 2**31
+
     x = abs(x)
+
     while x > 0:
-        reversed_num = reversed_num * 10 + x % 10
+        reversed_number = reversed_number * 10 + (x % 10)
         x //= 10
 
-    if reversed_num < -limit or reversed_num > limit:
+    # 32-bit signed integer range: −2^31 to 2^31 − 1
+    if reversed_number < -limit or reversed_number > limit - 1:
         return 0
-    return -reversed_num if original < 0 else reversed_num
+
+    return -reversed_number if original_number < 0 else reversed_number
 
 
 print(reverse(123))

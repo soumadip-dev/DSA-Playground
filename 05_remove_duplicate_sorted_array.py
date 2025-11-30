@@ -37,7 +37,7 @@ def remove_duplicates_in_place(nums):
     write_index = 0
 
     for read_index in range(1, len(nums)):
-        if nums[read_index] != nums[write_index]:
+        if nums[read_index] > nums[write_index]:
             write_index += 1
             nums[write_index] = nums[read_index]
 
